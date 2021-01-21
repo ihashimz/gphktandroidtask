@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/loginFragment">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.gph_kt_android_taks.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_coursesFragment"
+            app:destination="@id/coursesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/coursesFragment"
+        android:name="com.example.gph_kt_android_taks.ui.courses_log.CoursesFragment"
+        android:label="courses_fragment"
+        tools:layout="@layout/courses_fragment" >
+        <action
+            android:id="@+id/action_coursesFragment_to_addCourseFragment"
+            app:destination="@id/addCourseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.gph_kt_android_taks.ui.signup.SignupFragment"
+        android:label="signup_fragment"
+        tools:layout="@layout/signup_fragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.gph_kt_android_taks.ui.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCourseFragment"
+        android:name="com.example.gph_kt_android_taks.ui.add_course.AddCourseFragment"
+        android:label="add_course_fragment"
+        tools:layout="@layout/add_course_fragment" />
+</navigation>

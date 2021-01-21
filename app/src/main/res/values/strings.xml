@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">gph-kt-android-taks</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="id">رقم الهوية</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="remember_me">تذكرني</string>
+    <string name="login">دخول</string>
+    <string name="no_account">ليس لديك حساب ؟ تسجيل جديد</string>
+    <string name="hello_message">مرحبا\n قم بتسجيل الدخول</string>
+    <string name="new_account">تسجيل جديد</string>
+    <string name="name">الاسم الكريم</string>
+    <string name="phone">رقم الجوال</string>
+    <string name="upload_image">رفع صورة شخصية</string>
+    <string name="signup">تسجيل جديد</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="courses_history">سجل الدورات التدريبية</string>
+    <string name="main_information">البيانات الاساسية</string>
+    <string name="download">تحميل المرفق</string>
+    <string name="required_field">هذا الحقل مطلوب</string>
+    <string name="re_password">تأكيد كلمة المرور</string>
+    <string name="invalid_input">المدخل غير صحيح</string>
+    <string name="add_course">"تسجيل دورة "</string>
+    <string name="phone_error">يرجى التأكد من ان الرقم يطابق 05xxxxxxxx</string>
+
+</resources>

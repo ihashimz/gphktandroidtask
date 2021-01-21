@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.signup.SignupFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/gph_logo_arabic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/rounded_10dp_background_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            app:layout_constraintVertical_bias="0.25">
+
+
+            <TextView
+                android:id="@+id/new_account_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/new_account"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.example.gph_kt_android_taks.utils.CustomTextInputLayout
+                android:id="@+id/ed_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:hint="@string/id"
+                android:visibility="visible"
+                app:boxStrokeWidth="0dp"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintEnabled="true"
+                android:layoutDirection="rtl"
+
+                android:textAlignment="viewStart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/new_account_message"
+                app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/id"
+                    android:inputType="phone"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp"
+                    android:layoutDirection="rtl"
+
+                    android:textAlignment="viewStart"
+                    android:textColorHint="@color/lightGray"
+                    android:textSize="16sp"
+                    app:errorTextAppearance="@style/error_appearance" />
+
+            </com.example.gph_kt_android_taks.utils.CustomTextInputLayout>
+
+            <com.example.gph_kt_android_taks.utils.CustomTextInputLayout
+                android:id="@+id/ed_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="@string/name"
+                android:visibility="visible"
+                app:boxStrokeWidth="0dp"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_id"
+                app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp"
+                    android:textAlignment="textStart"
+                    android:textColorHint="@color/lightGray"
+                    android:textSize="16sp"
+                    app:errorTextAppearance="@style/error_appearance" />
+
+            </com.example.gph_kt_android_taks.utils.CustomTextInputLayout>
+
+            <com.example.gph_kt_android_taks.utils.CustomTextInputLayout
+                android:id="@+id/ed_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="@string/phone"
+                android:visibility="visible"
+                app:boxStrokeWidth="0dp"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintEnabled="true"
+                android:layoutDirection="rtl"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_name"
+                app:startIconDrawable="@drawable/ic_baseline_phone_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    android:paddingStart="12dp"
+                    android:layoutDirection="rtl"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp"
+                    android:textAlignment="textStart"
+                    android:textColorHint="@color/lightGray"
+                    android:textSize="16sp"
+                    app:errorTextAppearance="@style/error_appearance" />
+
+            </com.example.gph_kt_android_taks.utils.CustomTextInputLayout>
+
+            <com.example.gph_kt_android_taks.utils.CustomTextInputLayout
+                android:id="@+id/ed_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="@string/email"
+                android:visibility="visible"
+                app:boxStrokeWidth="0dp"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layoutDirection="rtl"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_phone"
+                app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:layoutDirection="rtl"
+
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp"
+                    android:textAlignment="textStart"
+                    android:textColorHint="@color/lightGray"
+                    android:textSize="16sp"
+                    app:errorTextAppearance="@style/error_appearance" />
+
+            </com.example.gph_kt_android_taks.utils.CustomTextInputLayout>
+
+            <com.example.gph_kt_android_taks.utils.CustomTextInputLayout
+                android:id="@+id/ed_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="@string/password"
+                android:visibility="visible"
+                app:boxStrokeWidth="0dp"
+                android:layoutDirection="rtl"
+                android:textAlignment="viewStart"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_email"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="viewStart"
+                    android:textColorHint="@color/lightGray"
+                    android:textSize="16sp"
+                    app:errorTextAppearance="@style/error_appearance" />
+
+            </com.example.gph_kt_android_taks.utils.CustomTextInputLayout>
+
+            <com.example.gph_kt_android_taks.utils.CustomTextInputLayout
+                android:id="@+id/ed_conf_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:hint="@string/re_password"
+                android:visibility="visible"
+                app:boxStrokeWidth="0dp"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintEnabled="true"
+                android:layoutDirection="rtl"
+                android:textAlignment="viewStart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_password"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    android:layoutDirection="rtl"
+
+                    android:paddingBottom="12dp"
+                    android:textAlignment="viewStart"
+                    android:textColorHint="@color/lightGray"
+                    android:textSize="16sp"
+                    app:errorTextAppearance="@style/error_appearance" />
+
+            </com.example.gph_kt_android_taks.utils.CustomTextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/button_upload_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="32dp"
+                android:paddingHorizontal="8dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_conf_password"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/upload_image"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:src="@drawable/ic_baseline_arrow_upward_24"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_signup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/rounded_button"
+                android:drawableTint="@color/white"
+                android:text="@string/signup"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_upload_image" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
